@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "421483291180",
+    "firebase_url": "https://futuregram-7df98.firebaseio.com",
+    "project_id": "futuregram-7df98",
+    "storage_bucket": "futuregram-7df98.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:421483291180:android:56ca16be1ed27447",
+        "android_client_info": {
+          "package_name": "com.example.futuregram3"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "421483291180-1tg5l6ndvac7lk3a45btcb6osr333jtj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.futuregram3",
+            "certificate_hash": "c1fec5bb8fb821f7bc92db13c5b5afea591194d6"
+          }
+        },
+        {
+          "client_id": "421483291180-enpvlll6j0cipnb5g4hi6tf7tkaem4d1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA-gibnzjnZDjPR61BA7b1jeedlr6lzkJU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "421483291180-enpvlll6j0cipnb5g4hi6tf7tkaem4d1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

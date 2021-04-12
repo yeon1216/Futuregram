@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.futuregram3">
+
+    <!-- 카카오 로그인, FCM, 지도을 위해 인터넷 권한 -->
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- camera, gallery -->
+
+    <!-- 지도를 위해 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+
+    <!-- <uses-permission android:name="android.permission.CAMERA" /> -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> <!-- 문자메시지 전송 권한 -->
+    <uses-permission android:name="android.permission.SEND_SMS" /> <!-- 전화 걸기 권한 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:name=".GlobalApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/app_icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+
+        <!-- FCM을 위한 서비스 -->
+        <service
+            android:name=".MyFirebaseMessagingService"
+            android:exported="true">
+             <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+             </intent-filter>
+        </service>
+
+        <!-- FCM시 아이콘 색상 및 아이콘 이미지 -->
+        <!-- Set custom default icon. This is used when no icon is set for incoming notification messages.
+     See README(https://goo.gl/l4GJaQ) for more. -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/app_icon" />
+        <!-- Set color used with incoming notification messages. This is used when no color is set for the incoming
+             notification message. See README(https://goo.gl/6BKBk7) for more. -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" />
+
+        <!-- 알림채널 -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@string/default_notification_channel_id" />
+
+
+        <activity android:name=".PasswordUpdateActivity" />
+        <activity android:name=".NickNameInputActivity" /> <!-- ~~~>>> 이거는 뭐야?? -->
+        <!-- 카카오 로그인, 지도를 위한것 -->
+        <meta-data
+            android:name="com.kakao.sdk.AppKey"
+            android:value="@string/kakao_app_key" />
+
+        <!-- 구글 맵을 위해 -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_map_api_key" />
+        <!--<uses-library android:name="org.apache.http.legacy" android:required="false"/>-->
+
+        <activity android:name=".SampleLoginActivity" />
+        <activity
+            android:name=".BoardSingleActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LoadingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".BoardUpdateActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ProfileUpdateActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MemberListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ReplyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MessagingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MemberInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SettingActivity"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name=".TransientWritingService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name=".WriteBoardThirdActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".WriteBoardSecondActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MessageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".WriteBoardActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NotificationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LoginByPhoneActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SearchActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".JoinSecondActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".JoinActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LoginActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".HomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MyInfoActivity"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

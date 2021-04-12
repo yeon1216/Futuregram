@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Future\ngram</string>
+
+    <!-- 카카오 네이티브 앱 키 -->
+    <string name="kakao_app_key">17fc2c04554058375c42a39582dd1fd5</string>
+
+    <!-- 카카오 REST API 키 -->
+    <string name="kakao_rest_api_key">7857f66c36335fdb0ad3fe73c80d9801</string>
+
+    <!-- 구글 API 키 -->
+    <string name="google_map_api_key">AIzaSyA-gibnzjnZDjPR61BA7b1jeedlr6lzkJU</string>
+
+    <!-- FCM 기본 알림 채널-->
+    <string name="default_notification_channel_id">0000</string>
+
+
+    <!-- Ted Permission -->
+    <string name="permission_1">[설정] > [권한] 에서 권한을 허용할 수 있습니다.</string>
+    <string name="permission_2">사진 및 파일을 저장하기 위하여 접근 권한이 필요합니다.</string>
+
+</resources>
